@@ -1,0 +1,10 @@
+controller:
+  kind: DaemonSet
+  service:
+    annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+  daemonset:
+    useHostPort: true
+
+  config:
+    disable-access-log: "true"
